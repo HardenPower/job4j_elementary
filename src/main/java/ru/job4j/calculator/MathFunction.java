@@ -17,10 +17,9 @@ public class MathFunction {
         * warning в checkstyle плагине, если не использовать переменную result3
         * как я понял задание, result3 не учавствует в переменной total при сложении
         * но для исправлении предупреждения в checkstyle - добавил использование result3
-        *
         */
-        int result3 = MathFunction.func1(100); //
-        int total = result1 + result2 + result3;  //
+        int result3 = MathFunction.func1(100);
+        int total = result1 + result2 + result3;
         System.out.println(total);
     }
 }
