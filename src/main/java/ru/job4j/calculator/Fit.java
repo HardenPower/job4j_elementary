@@ -10,8 +10,8 @@ public class Fit {
     }
 
     public static void main(String[] args) {
-        double manWeight = manWeight(185);
-        double womanWeight = womanWeight(160);
+        double manWeight = manWeight(180);
+        double womanWeight = womanWeight(170);
         System.out.println(manWeight);
         System.out.println(womanWeight);
     }
