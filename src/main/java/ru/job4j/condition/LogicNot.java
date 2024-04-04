@@ -14,11 +14,7 @@ public class LogicNot {
     }
 
     public static boolean notPositive(int num) {
-        boolean result = false;
-        if (num != 0) {
-            result = !isPositive(num);
-        }
-        return result;
+        return num < 0;
     }
 
     public static boolean notEvenAndPositive(int num) {
