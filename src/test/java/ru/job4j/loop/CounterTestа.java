@@ -50,4 +50,31 @@ class CounterTest {
         int expected = 615;
         assertThat(result).isEqualTo(expected);
     }
+
+    @Test
+    void whenSumEvenNumbersFromOneToTenThenThirty() {
+        int start = 1;
+        int finish = 10;
+        int result = sumByEven(start, finish);
+        int expected = 30;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    void whenSumEvenNumbersFromTenToTwentyThenThirty() {
+        int start = 10;
+        int finish = 20;
+        int result = sumByEven(start, finish);
+        int expected = 90;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    void whenSumEvenNumbersFromMinusFourToThenThenThirty() {
+        int start = -4;
+        int finish = 10;
+        int result = sumByEven(start, finish);
+        int expected = 24;
+        assertThat(result).isEqualTo(expected);
+    }
 }
