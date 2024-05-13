@@ -8,21 +8,13 @@ public class SimpleStringEncoder {
         for (int i = 1; i < input.length(); i++) {
             if (input.charAt(i) == symbol) {
                 counter++;
-            } else if (counter == 1) {
-                result += symbol;
             } else  {
-                result += symbol + String.valueOf(counter);
-            }
-            if (input.charAt(i) != symbol) {
+                result += symbol + (counter == 1 ? "" : String.valueOf(counter));
                 counter = 1;
                 symbol = input.charAt(i);
             }
         }
-        if (counter == 1) {
-            result += symbol;
-        } else {
-            result += symbol + String.valueOf(counter);
-        }
+        result += symbol + (counter == 1 ? "" : String.valueOf(counter));
         return result;
     }
 }
