@@ -7,29 +7,11 @@ public class Max {
     }
 
     public static int max(int left, int middle, int right) {
-        int result;
-        if (left > middle && left > right) {
-            result = left;
-        } else if (middle > left && middle > right) {
-            result = middle;
-        } else {
-            result = right;
-        }
-        return result;
+        return max(left, max(middle, right));
     }
 
     public static int max(int a, int b, int c, int d) {
-        int max = a;
-        if (b > max) {
-            max = b;
-        }
-        if (c > max) {
-            max = c;
-        }
-        if (d > max) {
-            max = d;
-        }
-        return max;
+        return max(a, max(max(b, c), d));
     }
 
     public static int max(short left, int right) {

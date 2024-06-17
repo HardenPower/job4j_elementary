@@ -54,6 +54,17 @@ class MaxTest {
     }
 
     @Test
+    void whenMax1To2To140To120Then140() {
+        int a = 1;
+        int b = 2;
+        int c = 140;
+        int d = 120;
+        int result = Max.max(a, b, c, d);
+        int expected = 140;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
     void when10To12Then12() {
         short left = 10;
         int right = 12;
